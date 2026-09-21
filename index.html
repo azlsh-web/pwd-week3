@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3주차 · 나의 계산기</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="js/operations.js" defer></script>
+  <script src="js/calculator.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <main class="calculator" aria-label="계산기">
+    <div class="screen">
+      <p id="expression" aria-label="계산식"></p>
+      <output id="display" aria-label="계산 결과" aria-live="polite">0</output>
+      <p id="message" role="status"></p>
+    </div>
+    <div class="keys">
+      <button type="button" data-key="delete" class="utility" aria-label="마지막 숫자 지우기">⌫</button>
+      <button type="button" data-key="clear" class="utility" aria-label="전체 초기화">AC</button>
+      <button type="button" data-key="percent" class="utility" aria-label="100으로 나누기">%</button>
+      <button type="button" data-key="/" class="operator" aria-label="나누기">÷</button>
+
+      <button type="button" data-key="7">7</button>
+      <button type="button" data-key="8">8</button>
+      <button type="button" data-key="9">9</button>
+      <button type="button" data-key="*" class="operator" aria-label="곱하기">×</button>
+
+      <button type="button" data-key="4">4</button>
+      <button type="button" data-key="5">5</button>
+      <button type="button" data-key="6">6</button>
+      <button type="button" data-key="-" class="operator" aria-label="빼기">−</button>
+
+      <button type="button" data-key="1">1</button>
+      <button type="button" data-key="2">2</button>
+      <button type="button" data-key="3">3</button>
+      <button type="button" data-key="+" class="operator" aria-label="더하기">+</button>
+
+      <button type="button" data-key="sign" aria-label="부호 바꾸기">+/−</button>
+      <button type="button" data-key="0">0</button>
+      <button type="button" data-key="." aria-label="소수점">.</button>
+      <button type="button" data-key="=" class="operator" aria-label="계산하기">=</button>
+    </div>
+  </main>
+</body>
+</html>
